@@ -1,0 +1,11 @@
+print Hello!
+palindrom mad
+print
+print mad
+ls
+print This is
+sha1
+
+palindrom no
+palindrom tattar
+print LastPrintCommand
