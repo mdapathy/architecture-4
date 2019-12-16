@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"github.com/mdapathy/architecture-4/commands"
 	"github.com/mdapathy/architecture-4/engine"
 	"log"
 	"os"
@@ -39,7 +40,7 @@ func main() {
 	for scanner.Scan() {
 		scanner.Text()
 		commandLine := scanner.Text()
-		cmd := engine.Parse(commandLine) // parse the line to get an instance of Command cmd
+		cmd := commands.Parse(commandLine) // parse the line to get an instance of Command cmd
 		eventLoop.Post(cmd)
 	}
 
