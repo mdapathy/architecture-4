@@ -1,11 +1,11 @@
-print Hello!
 palindrom mad
+
+print Hello!
 print
-print mad
+palindrom
 ls
 print This is
-sha1
-
+mul
 palindrom no
 palindrom tattar
-print LastPrintCommand
+print Last_Print_Command
