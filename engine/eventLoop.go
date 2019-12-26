@@ -20,14 +20,13 @@ func (c CommandFunc) Execute(handler Handler) {
 	c(handler)
 }
 
-type data struct {
-	sync.Mutex
-	arr     []Command
-	waiting bool
-}
-
 type messageQueue struct {
-	data          data
+	data struct {
+		sync.Mutex
+		arr     []Command
+		waiting bool
+	}
+
 	receiveSignal chan struct{}
 }
 
